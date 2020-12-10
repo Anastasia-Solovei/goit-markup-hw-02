@@ -1,32 +1,77 @@
-body {
-    background-color: #FFFFFF;
-    color: #757575;
-}
- /* header */
-.logo {
-    color: #2196F3;
+/* Основные стили */
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color:  #2196F3;
+    --primary-white-color: #FFFFFF;
 }
 
-/* site nav */
+body {
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+}
+
 .list {
     list-style: none;
 }
 
-.site-nav .link {
-    color: #212121;
+ /* Логотип */
+.logo {
+    color: var(--accent-color);
 }
 
- /*#757575# телефон  и почта в шапке    #2196f3 телефон  и почта в ховере
-/#757575# цвет профессии в нашей команде, цвет текста в особенностях р 
-/* #212121секция особенности и чем мы занимаемся , наша команда и имена цвет заголовка 
-/*212121 шапка студия потрфолио и контакты   #2196f3  в ховере
-/* #FFFFFF в первой секции ефективные решения и кнопка тоже
+/* Меню навигации */
+.site-nav .link {
+    color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+.contacts-nav .link {
+    color: var(--primary-text-color);
+}
+
+.contacts-nav .link:hover,
+.contacts-nav .link:focus {
+    color: var(--accent-color);
+}
+
+/* Герой */
+.hero-title {
+    color: var(--primary-white-color);
+}
+
+.button {
+    color: var(--title-text-color);
+    background-color: #F5F4FA;
+}
+
+.button:hover,
+.button:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+.button.primary {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+/* Секция */
+.section-title,
+.section-subtitle {
+    color: var(--title-text-color);
+}
+
+
 /* адрес в подвале #FFFFFF
 /* вебстудио  в шапке и в подвале 2196f3 и 000000
 /* телефон и ссылыка в подвале с прозрачностью
 
 
-+/* Основной цвет #757575
-/* вторичный цвет #212121
-/* акцент кнопка background: #2196F3;
-/ белый цвет #FFFFFF
